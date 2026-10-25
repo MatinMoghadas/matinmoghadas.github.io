@@ -1,50 +1,85 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
-    <meta name="description" content="A simple webpage hosted on GitHub.">
-    <meta name="keywords" content="HTML, CSS, GitHub, website, example">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matin Moghadas — AI Engineer</title>
+  <meta name="description" content="AI engineering portfolio of Matin Moghadas, focused on retrieval, evaluation, privacy-preserving systems, and practical computer vision." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>My name is Matin, I am currently a computer science student. From an early age, I have been fascinated by technology, particularly in the realms of graphics and animation. This initial interest sparked my curiosity about how computers work, leading me to choose computer science as my field of study in college.
-            As I delve deeper into my coursework, I have come to appreciate the intricate concepts that underpin computer science. I find algorithms particularly captivating; they feel almost magical in their ability to solve complex problems efficiently. This fascination drives me to explore how these theoretical concepts can be applied in real-world scenarios.
-            I am eager to bridge the gap between theory and practice, and I am excited about the opportunities that lie ahead in my journey as a computer science student. Whether it's through internships, projects, or collaborations, I am committed to enhancing my skills and contributing to innovative technological solutions. </p>
-        <p></p>
+  <header class="site-header">
+    <a class="wordmark" href="#top">MM<span>.</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Selected work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <p class="eyebrow">AI engineering · retrieval · evaluation</p>
+      <h1>Building useful AI systems<br /><em>with measurable behavior.</em></h1>
+      <p class="lede">I’m Matin Moghadas, an AI engineer working across retrieval-augmented generation, language-model adaptation, and applied computer vision.</p>
+      <div class="hero-links">
+        <a class="button button-dark" href="#work">Explore selected work <span>↘</span></a>
+        <a class="text-link" href="mailto:to.bulldog933@passinbox.com">to.bulldog933@passinbox.com ↗</a>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I've worked on:</p>
-        <ul>
-            <li>Object Detection</li>
-            <li>ML seminar</li>
-            <li>Smile Detection</li>
-        </ul>
+    <section id="work" class="section-wrap work-section">
+      <div class="section-heading"><p class="eyebrow">01 / Selected work</p><p class="section-note">Research-minded systems, built end to end.</p></div>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-index">01</div>
+          <div class="project-body">
+            <div class="project-meta"><span>Privacy-preserving RAG</span><span>2024—25</span></div>
+            <h2>Vague Gate</h2>
+            <p>A privacy-preserving retrieval pipeline exploring word-level scarcity and vagueness, with an evaluation layer for studying retrieval and answer quality.</p>
+            <div class="tags"><span>RAG evaluation</span><span>Privacy</span><span>Information retrieval</span></div>
+            <a class="project-link" href="https://github.com/MatinMoghadas/LDP_RAG">View repository ↗</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-index">02</div>
+          <div class="project-body">
+            <div class="project-meta"><span>Master’s thesis</span><span>2024—25</span></div>
+            <h2>CVE → TTP mapping</h2>
+            <p>QLoRA fine-tuning of Llama 8B for mapping vulnerability descriptions to threat behavior, with a benchmark against the base model, GPT/Gemini, and traditional ML/NLP methods.</p>
+            <div class="tags"><span>QLoRA</span><span>Llama 8B</span><span>Benchmarking</span></div>
+            <p class="metrics">Metrics: Accuracy · Precision · Recall · F1 · LRAP · Recall@10</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-index">03</div>
+          <div class="project-body">
+            <div class="project-meta"><span>Applied RAG</span><span>Snowa Tec</span></div>
+            <h2>Guided assistant</h2>
+            <p>A child-aspiration guidance assistant built around document processing, vector retrieval, prompt design, a multi-step flow, and response evaluation.</p>
+            <div class="tags"><span>Document processing</span><span>Vector search</span><span>Prompt design</span></div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at <a href="mailto:mtnms049@gmail.com">Mail Me</a>.</p>
+    <section id="experience" class="section-wrap split-section">
+      <div><p class="eyebrow">02 / Experience</p><h2 class="section-title">From model behavior<br />to shipped systems.</h2></div>
+      <div class="experience-list">
+        <div class="experience-item"><span class="year">Internship</span><div><h3>ONNX emotion detection</h3><p>Worked on an inference-oriented emotion detection pipeline and model export workflow.</p></div></div>
+        <div class="experience-item"><span class="year">Internship</span><div><h3>YOLOv8 food detection</h3><p>Built an object-detection workflow for refrigerator food recognition, including hyperparameter exploration.</p></div></div>
+        <div class="experience-item"><span class="year">Open source</span><div><h3>RAG experiments</h3><p>Practical implementations covering retrieval, chunking, embeddings, and evaluation.</p><a href="https://github.com/MatinMoghadas/rag_implementation" class="project-link">See repository ↗</a></div></div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 My GitHub Website</p>
-    </footer>
+    <section id="contact" class="contact-section section-wrap">
+      <p class="eyebrow">03 / Contact</p>
+      <h2>Let’s build something<br /><em>worth measuring.</em></h2>
+      <a class="contact-email" href="mailto:to.bulldog933@passinbox.com">to.bulldog933@passinbox.com ↗</a>
+      <div class="contact-links"><a href="https://github.com/MatinMoghadas">GitHub ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><span>© 2025 Matin Moghadas</span><span>AI engineering portfolio</span></footer>
 </body>
 </html>
